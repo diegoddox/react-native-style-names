@@ -1,6 +1,6 @@
 {
   "name": "react-native-style-names",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A very simple JavaScript utility for conditionally joining React-native styles.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "react-native styles",
     "styles",
     "util",
-    "utility"
+    "utility",
+    "react-native classnames"
   ],
   "author": "Diego Oliveira",
   "license": "MIT",

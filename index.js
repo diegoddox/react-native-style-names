@@ -37,6 +37,8 @@ function isAnimatedValue(obj) {
       if (obj[key] instanceof Animated.Value) {
         objectIsAnimatedValue = true;
         break;
+      } else if (typeof obj[key] === 'object') {
+        objectIsAnimatedValue = isAnimatedValue(obj[key]);
       }
     }
   }

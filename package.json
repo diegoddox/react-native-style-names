@@ -1,6 +1,6 @@
 {
   "name": "react-native-style-names",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A very simple JavaScript utility for conditionally joining React-native styles.",
   "main": "index.js",
   "scripts": {

@@ -1,9 +1,12 @@
 {
   "name": "react-native-style-names",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A very simple JavaScript utility for conditionally joining React-native styles.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +30,8 @@
   "homepage": "https://github.com/diegoddox/react-native-style-names#readme",
   "dependencies": {
     "react-native": "^0.51.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
   }
 }

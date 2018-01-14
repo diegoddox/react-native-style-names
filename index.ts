@@ -1,8 +1,8 @@
-export default function RNStyleNames(...args) {
-  let styleNames = [];
-  	
+export default function RNStyleNames(...args: (string | object)[]): (number | object)[] {
+  const styleNames: (number | object)[] = [];
+
   for (let i = 0; i < args.length; i++) {
-    const arg = args[i];
+    const arg = args[i] as any;
     if (typeof arg === 'number') {
       styleNames.push(arg);
     } else if (typeof arg === 'object') {
@@ -14,9 +14,7 @@ export default function RNStyleNames(...args) {
           styleNames.push(Number(key));
         }
       }
-    }
-    
-    if (Array.isArray(arg) && arg.length) {
+    } else if (Array.isArray(arg) && arg.length) {
       styleNames.push(...RNStyleNames.apply(null, arg));
     }
   }

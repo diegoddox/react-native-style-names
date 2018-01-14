@@ -1,7 +1,7 @@
 # react-native-style-names
 [![NPM](https://nodei.co/npm/react-native-style-names.png)](https://nodei.co/npm/react-native-style-names/)
 
-A very simple JavaScript utility for conditionally joining react-native styles
+Say goodbye to `if` and `else` for `styles` on your react-native App, `react-native-style-names` is a very simple JavaScript utility for conditionally joining react-native styles
 
 ##### 1. Installation
 
@@ -13,7 +13,10 @@ A very simple JavaScript utility for conditionally joining react-native styles
 import {StyleSheet} from 'react-native';
 import stylenames from 'react-native-style-names';
 
-stylenames(styles.container, styles.background) // => [styles.container, styles.background]
+stylenames(
+  styles.container,
+  styles.background
+) // => [styles.container, styles.background]
 
 stylenames({ [styles.container]: true }) // => [styles.container]
 
